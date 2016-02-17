@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <div class="segment04">
+    <h4 class="tit">회원정보 입력</h4>
+    <form action="#" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" id="frm">
+      <fieldset>
+        <legend>section 5</legend>
+        <table cellpadding="0" border="0" class="tb_form" summary="회원정보 입력">
+          <caption>회원정보 입력</caption>
+          <colgroup>
+            <col width="130" />
+            <col width="140" />
+            <col width="128" />
+            <col width="*" />
+          </colgroup>
+          <tr>
+            <th>아이디</th>
+            <td><input type="text" value="" name="id" maxlength="20" id="id" /></td>
+            <th>이메일</th>
+            <td class="last">
+              <input type="text" value="" name="email" id="email" maxlength="20" /> 
+              <span class="at">@</span>
+              <input type="text" value="" name="email_host" id="email_host" maxlength="20" />
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+            <td><input type="password" value="" name="passwd" maxlength="16" id="passwd" /></td>
+            <th>비밀번호 확인</th>
+            <td class="last"><input type="password" value="" name="re-passwd" maxlength="16" id="re-passwd" /></td>
+          </tr>
+          <tr>
+            <th>이름</th>
+            <td><input type="text" value="" name="name" maxlength="16" id="name" /></td>
+            <th>휴대폰번호</th>
+            <td class="last">
+              <select name="tel-first" id="tel-first">
+                <optgroup label="Cellphone">
+                  <option value="010" selected="selected">010</option>
+                  <option value="010">011</option>
+                  <option value="010">016</option>
+                  <option value="010">017</option>
+                  <option value="010">019</option>
+                </optgroup>
+              </select><span class="hyphen">-</span><input type="text" value="" name="tel-mid" id="tel-mid" maxlength="4" /><span class="hyphen2">-</span><input type="text" value="" name="tel-end" id="tel-end" maxlength="4" />
+            </td>
+          </tr>
+          <tr>
+            <th class="last_row">성별</th>
+            <td class="last_row">
+              <input type="radio" name="sex" id="male" checked="checked" /><label for="male" class="male_label">남</label><input type="radio" name="sex" id="female" /><label for="female" class="femal_label">여</label>
+            </td>
+            <th class="last_row">약관동의</th>
+            <td class="last last_row">
+              <input type="checkbox" name="usage_agree" id="usage_agree" /><label for="usage_agree" class="usage_agree">이용약관에 동의합니다.</label><input type="checkbox" name="privacy_agree" id="privacy_agree" /><label for="privacy_agree" class="privacy_agree">개인정보 취급방침에 동의합니다.</label>
+
+            </td>
+          </tr>
+        </table>
+
+        <div class="area-btn">
+          <input type="submit" value="가입완료" class="submit-btn" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
